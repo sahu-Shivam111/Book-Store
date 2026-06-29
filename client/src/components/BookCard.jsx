@@ -9,9 +9,7 @@ function BookCard({ book, deleteBook,role }) {
           <div className="w-full h-72 bg-gray-100 flex items-center justify-center">
     <img
         src={
-            book.image
-                ? `http://localhost:5000/uploads/${book.image}`
-                : "https://via.placeholder.com/200x300?text=No+Image"
+           `${import.meta.env.VITE_API_URL}/uploads/${book.image}`
         }
         alt={book.title}
         className="max-h-full max-w-full object-contain"
