@@ -210,7 +210,7 @@ function EditBook() {
                                 </label>
 
                                 <img
-                                    src={`http://localhost:5000/uploads/${oldImage}`}
+                              src={`${import.meta.env.VITE_API_URL}/uploads/${book.image}`}
                                     alt="Book"
                                     className="w-48 rounded-lg border"
                                 />
